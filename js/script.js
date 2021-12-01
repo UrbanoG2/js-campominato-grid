@@ -14,9 +14,6 @@ const playBtn = document.getElementById("btnPlay");
 //creo l'evento click -- voglio che al click di play in pagina si veda l'elemento che ha la classe active
 
 //variabile difficoltà
-
-
-
 playBtn.addEventListener("click", 
     function () {
 
@@ -52,7 +49,87 @@ playBtn.addEventListener("click",
             easy_container.classList.remove ("active");
             
         }
+
+    
+    //creo gli elementi nel dom
+
+
+    const easyContainer = document.getElementById("easy_container");
+
+    const mediumContainer = document.getElementById("medium_container");
+
+    const hardContainer = document.getElementById("hard_container");
+
+
+    
+
+        if (difficulty == "Easy") {
+            //creo un elemento
+
+            for (let i = 0; i < 100; i++) {
+                let easyCreated = document.createElement("div");
+                easyCreated.classList.add ("square");
+
+                easyContainer.append(easyCreated);
+                console.log(easyCreated);
+
+                //creo un array per i numeri
+
+                // numberArr = [];
+                // let randNumber = Math.floor(Math.random() * 100) +1;
+                // console.log(randNumber);
+
+
+            }
+        
+        } else if (difficulty == "Medium") {
+            //creo un elemento
+
+            for (let i = 0; i < 81; i++) {
+                let mediumCreated = document.createElement("div");
+                mediumCreated.classList.add ("square" , "medium");
+
+                mediumContainer.append(mediumCreated);
+                console.log(mediumCreated);
+
+                //creo un array per i numeri
+
+                // numberArr = [];
+                // let randNumber = Math.floor(Math.random() * 100) +1;
+                // console.log(randNumber);
+
+
+            }
+        
+        } else if (difficulty == "Hard") {
+            //creo un elemento
+
+            for (let i = 0; i < 49; i++) {
+                let hardCreated = document.createElement("div");
+                hardCreated.classList.add ("square" , "hard");
+
+                hardContainer.append(hardCreated);
+                console.log(hardCreated);
+
+                //creo un array per i numeri
+
+                // numberArr = [];
+                // let randNumber = Math.floor(Math.random() * 100) +1;
+                // console.log(randNumber);
+
+
+            }
+        }        
+
+
         
 })
+
+
+
+
+
+
+
 
     
