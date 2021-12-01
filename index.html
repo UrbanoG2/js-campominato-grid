@@ -21,12 +21,12 @@
         <div class="form_container">
             <label for="difficulty">Difficolt&agrave;: </label>
             <select name="difficulty" id="difficulty">
-                <option value="Easy">Easy</option>
-                <option value="Medium">Medium</option>
-                <option value="Hard">Hard</option>
+                <option id="easy" value="Easy">Easy</option>
+                <option id="medium" value="Medium">Medium</option>
+                <option id="hard" value="Hard">Hard</option>
             </select>
 
-            <button>Play</button>
+            <button id="btnPlay">Play</button>
         </div>
     </header>
 
@@ -34,7 +34,7 @@
     <main>
         <div class="big_container">
             <div class="grid_container">
-               <div class="container_easy active">
+               <div id="easy_container" class="container_easy">
                    <div class="square"></div>
                    <div class="square"></div>
                    <div class="square"></div>
@@ -137,7 +137,7 @@
                    <div class="square"></div>
                </div>
 
-               <div class="container_medium ">
+               <div id="medium_container" class="container_medium">
                    <div class="square medium"></div>
                    <div class="square medium"></div>
                    <div class="square medium"></div>
@@ -221,7 +221,7 @@
                    <div class="square medium"></div>
                </div>
 
-               <div class="container_hard ">
+               <div id="hard_container" class="container_hard">
                    <div class="square hard"></div>
                    <div class="square hard"></div>
                    <div class="square hard"></div>
