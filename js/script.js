@@ -75,10 +75,15 @@ playBtn.addEventListener("click",
 
                 //creo un array per i numeri
 
-                // numberArr = [];
-                // let randNumber = Math.floor(Math.random() * 100) +1;
-                // console.log(randNumber);
+                let arrNum = [...Array(100).keys()];
+                console.log(arrNum);
 
+                easyCreated.innerHTML = i + 1;
+                
+                easyCreated.addEventListener("click", 
+                function() {
+                    this.style.backgroundColor = "blue";
+                })
 
             }
         
@@ -92,12 +97,12 @@ playBtn.addEventListener("click",
                 mediumContainer.append(mediumCreated);
                 console.log(mediumCreated);
 
-                //creo un array per i numeri
+                mediumCreated.innerHTML = i + 1;
 
-                // numberArr = [];
-                // let randNumber = Math.floor(Math.random() * 100) +1;
-                // console.log(randNumber);
-
+                mediumCreated.addEventListener("click", 
+                function() {
+                    this.style.backgroundColor = "blue";
+                })
 
             }
         
@@ -111,12 +116,12 @@ playBtn.addEventListener("click",
                 hardContainer.append(hardCreated);
                 console.log(hardCreated);
 
-                //creo un array per i numeri
-
-                // numberArr = [];
-                // let randNumber = Math.floor(Math.random() * 100) +1;
-                // console.log(randNumber);
-
+                hardCreated.innerHTML = i + 1;
+                
+                hardCreated.addEventListener("click", 
+                function() {
+                    this.style.backgroundColor = "blue";
+                })
 
             }
         }        

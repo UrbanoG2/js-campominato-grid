@@ -91,3 +91,13 @@ footer {
     width: calc(100% / 7);
     height: calc(100% / 7);
 }
+
+
+footer {
+    margin-top: 1.7em;
+    padding-left:1.5em ;
+}
+
+.greenheart {
+    color: lightgreen;
+}
